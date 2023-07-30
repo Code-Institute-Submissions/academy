@@ -1,6 +1,5 @@
-import './App.css';
 import {useEffect, useState} from "react";
-import {axiosClient} from "./api/axiosDefaults";
+import {axiosClient} from "../api/axiosDefaults";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Container from "react-bootstrap/Container";
 import {Col, Row} from "react-bootstrap";

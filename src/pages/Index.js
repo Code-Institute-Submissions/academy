@@ -1,9 +1,8 @@
-import React, {useEffect, useState} from 'react';
-import {Spinner} from "react-bootstrap";
+import React from 'react';
 import CategoryList from "../components/CategoryList";
 import InstructorList from "../components/InstructorList";
 
-function Categories({query}) {
+function Index() {
     return (
         <>
             <CategoryList title={'Featured Categories'} query={'featured=1'}/>
@@ -12,4 +11,4 @@ function Categories({query}) {
     );
 }
 
-export default Categories;
+export default Index;
