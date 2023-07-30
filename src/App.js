@@ -5,19 +5,6 @@ import Navigation from "./components/Navigation";
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 function App() {
-    const [categories, setCategories] = useState({ results: [] });
-    useEffect(() => {
-        const handleMount = async () => {
-            try {
-                const categories = await axiosClient.get('/categories');
-                setCategories(categories);
-            } catch (err) {
-                console.log(err);
-            }
-        };
-
-        handleMount();
-    }, []);
     return (
         <div className="App">
             <Navigation />
